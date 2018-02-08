@@ -1,6 +1,5 @@
 #!/bin/bash
-rm $1.o
-rm $1.lst
-rm $1
-nasm -f elf32 -F dwarf $1.asm -l $1.lst
-ld -melf_i386 -o $1 $1.o
+rm *.o
+rm *.lst
+nasm -g -f elf64 -F dwarf $1.asm -l $1.lst
+ld $1.o -o $1
