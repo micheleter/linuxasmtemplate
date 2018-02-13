@@ -1,6 +1,7 @@
 bits 32
 section .data
   ;Initialized data definitions go here
+    testvar db  10
 
 section .bss
   ;Uninitialized memory reservations go here
